@@ -4,7 +4,8 @@
 set -e
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
-echo $DIR
+
+( cd $DIR && pod install )
 
 OBJROOT=${DIR}/build
 SYMROOT=${DIR}/build
