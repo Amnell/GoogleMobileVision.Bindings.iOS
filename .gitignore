@@ -260,3 +260,4 @@ UpgradeLog*.htm
 # Microsoft Fakes
 FakesAssemblies/
 **/GeneratedFrameworks
+GoogleMobileVision.Xamarin.Bindings/GoogleMobileVision.Xamarin.Bindings/Frameworks/**
