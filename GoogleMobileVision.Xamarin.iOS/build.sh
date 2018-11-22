@@ -3,19 +3,22 @@
 # Set bash script to exit immediately if any commands fail.
 set -e
 
-OBJROOT=$(PWD)/build
-SYMROOT=$(PWD)/build
-GENERATED_FRAMEWORKS_PATH=$(PWD)/GeneratedFrameworks/Fat
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
+echo $DIR
+
+OBJROOT=${DIR}/build
+SYMROOT=${DIR}/build
+GENERATED_FRAMEWORKS_PATH=${DIR}/GeneratedFrameworks/Fat
 
 xcodebuild \
--workspace GoogleMobileVision.Xamarin.xcworkspace \
+-workspace ${DIR}/GoogleMobileVision.Xamarin.xcworkspace \
 -scheme GoogleMobileVision.Xamarin \
 -configuration Release \
 OBJROOT=${OBJROOT} \
 SYMROOT=${OBJROOT}
 
 xcodebuild \
--workspace GoogleMobileVision.Xamarin.xcworkspace \
+-workspace ${DIR}/GoogleMobileVision.Xamarin.xcworkspace \
 -scheme GoogleMobileVision.Xamarin \
 -configuration Release \
 -sdk iphonesimulator \
