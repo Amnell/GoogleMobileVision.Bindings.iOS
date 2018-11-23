@@ -6,7 +6,7 @@ target 'GoogleMobileVision.Xamarin' do
   use_frameworks!
 
   # Pods for GoogleMobileVision.Xamarin
-  pod 'GoogleMobileVision'
+  pod 'GoogleMobileVision', '~> 1.5.0'
 
   target 'GoogleMobileVision.XamarinTests' do
     inherit! :search_paths
