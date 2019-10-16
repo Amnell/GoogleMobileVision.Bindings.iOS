@@ -15,6 +15,7 @@ xcodebuild \
 -workspace ${DIR}/GoogleMobileVision.Xamarin.xcworkspace \
 -scheme GoogleMobileVision.Xamarin \
 -configuration Release \
+-sdk iphoneos \
 OBJROOT=${OBJROOT} \
 SYMROOT=${OBJROOT}
 
