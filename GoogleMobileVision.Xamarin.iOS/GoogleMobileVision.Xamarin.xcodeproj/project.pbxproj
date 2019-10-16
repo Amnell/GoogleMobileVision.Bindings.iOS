@@ -3,10 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		119E80B823572987002182A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119E80B723572987002182A5 /* AppDelegate.swift */; };
+		119E80BA23572987002182A5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119E80B923572987002182A5 /* SceneDelegate.swift */; };
+		119E80BC23572987002182A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119E80BB23572987002182A5 /* ViewController.swift */; };
+		119E80BF23572987002182A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 119E80BD23572987002182A5 /* Main.storyboard */; };
+		119E80C12357298A002182A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 119E80C02357298A002182A5 /* Assets.xcassets */; };
+		119E80C42357298A002182A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 119E80C22357298A002182A5 /* LaunchScreen.storyboard */; };
+		119E80C923572991002182A5 /* GoogleMobileVision_Xamarin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11DCC6F5219EABBF00A0CDD7 /* GoogleMobileVision_Xamarin.framework */; };
+		119E80CA23572991002182A5 /* GoogleMobileVision_Xamarin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 11DCC6F5219EABBF00A0CDD7 /* GoogleMobileVision_Xamarin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		11CF2749219EAC7F00C47C8B /* GoogleMobileVisionWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 11CF2747219EAC7F00C47C8B /* GoogleMobileVisionWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		11CF274A219EAC7F00C47C8B /* GoogleMobileVisionWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CF2748219EAC7F00C47C8B /* GoogleMobileVisionWrapper.m */; };
 		11DCC6FF219EABBF00A0CDD7 /* GoogleMobileVision_Xamarin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11DCC6F5219EABBF00A0CDD7 /* GoogleMobileVision_Xamarin.framework */; };
@@ -14,9 +22,17 @@
 		11DCC706219EABBF00A0CDD7 /* GoogleMobileVision_Xamarin.h in Headers */ = {isa = PBXBuildFile; fileRef = 11DCC6F8219EABBF00A0CDD7 /* GoogleMobileVision_Xamarin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2CF858EAD705FD259593C7EB /* Pods_GoogleMobileVision_XamarinTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FAF37B8C300594302C236E9 /* Pods_GoogleMobileVision_XamarinTests.framework */; };
 		55125BA1EA17D91F61B22F8B /* Pods_GoogleMobileVision_Xamarin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 484D4212E2AF6715E3AC9EF4 /* Pods_GoogleMobileVision_Xamarin.framework */; };
+		5DA96E526699E0DBCDE9FBB1 /* Pods_DemoProjectiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D03A5DBCCFA2989417E5B59 /* Pods_DemoProjectiOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		119E80CB23572991002182A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11DCC6EC219EABBF00A0CDD7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11DCC6F4219EABBF00A0CDD7;
+			remoteInfo = GoogleMobileVision.Xamarin;
+		};
 		11DCC700219EABBF00A0CDD7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 11DCC6EC219EABBF00A0CDD7 /* Project object */;
@@ -26,9 +42,31 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		119E80CD23572991002182A5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				119E80CA23572991002182A5 /* GoogleMobileVision_Xamarin.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0ABFC788233743AA0DD8947C /* Pods-GoogleMobileVision.XamarinTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleMobileVision.XamarinTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoogleMobileVision.XamarinTests/Pods-GoogleMobileVision.XamarinTests.release.xcconfig"; sourceTree = "<group>"; };
 		0FAF37B8C300594302C236E9 /* Pods_GoogleMobileVision_XamarinTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleMobileVision_XamarinTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		119E80B523572987002182A5 /* DemoProjectiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoProjectiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		119E80B723572987002182A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		119E80B923572987002182A5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		119E80BB23572987002182A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		119E80BE23572987002182A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		119E80C02357298A002182A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		119E80C32357298A002182A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		119E80C52357298A002182A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11CF2747219EAC7F00C47C8B /* GoogleMobileVisionWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoogleMobileVisionWrapper.h; sourceTree = "<group>"; };
 		11CF2748219EAC7F00C47C8B /* GoogleMobileVisionWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoogleMobileVisionWrapper.m; sourceTree = "<group>"; };
 		11DCC6F5219EABBF00A0CDD7 /* GoogleMobileVision_Xamarin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GoogleMobileVision_Xamarin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,13 +75,25 @@
 		11DCC6FE219EABBF00A0CDD7 /* GoogleMobileVision.XamarinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoogleMobileVision.XamarinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11DCC703219EABBF00A0CDD7 /* GoogleMobileVision_XamarinTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoogleMobileVision_XamarinTests.m; sourceTree = "<group>"; };
 		11DCC705219EABBF00A0CDD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3822D09F387E41A952B99AAD /* Pods-DemoProjectiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoProjectiOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoProjectiOS/Pods-DemoProjectiOS.release.xcconfig"; sourceTree = "<group>"; };
 		3FF61531FDEAEC2C2E85DAAB /* Pods-GoogleMobileVision.Xamarin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleMobileVision.Xamarin.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoogleMobileVision.Xamarin/Pods-GoogleMobileVision.Xamarin.release.xcconfig"; sourceTree = "<group>"; };
 		484D4212E2AF6715E3AC9EF4 /* Pods_GoogleMobileVision_Xamarin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleMobileVision_Xamarin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D03A5DBCCFA2989417E5B59 /* Pods_DemoProjectiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoProjectiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74B8FFC9C550D99775328601 /* Pods-DemoProjectiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoProjectiOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DemoProjectiOS/Pods-DemoProjectiOS.debug.xcconfig"; sourceTree = "<group>"; };
 		D05CF607307C3E1E49276239 /* Pods-GoogleMobileVision.XamarinTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleMobileVision.XamarinTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoogleMobileVision.XamarinTests/Pods-GoogleMobileVision.XamarinTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E1F3326EF1C685B605330C02 /* Pods-GoogleMobileVision.Xamarin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleMobileVision.Xamarin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoogleMobileVision.Xamarin/Pods-GoogleMobileVision.Xamarin.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		119E80B223572987002182A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				119E80C923572991002182A5 /* GoogleMobileVision_Xamarin.framework in Frameworks */,
+				5DA96E526699E0DBCDE9FBB1 /* Pods_DemoProjectiOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		11DCC6F2219EABBF00A0CDD7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -64,11 +114,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		119E80B623572987002182A5 /* DemoProjectiOS */ = {
+			isa = PBXGroup;
+			children = (
+				119E80B723572987002182A5 /* AppDelegate.swift */,
+				119E80B923572987002182A5 /* SceneDelegate.swift */,
+				119E80BB23572987002182A5 /* ViewController.swift */,
+				119E80BD23572987002182A5 /* Main.storyboard */,
+				119E80C02357298A002182A5 /* Assets.xcassets */,
+				119E80C22357298A002182A5 /* LaunchScreen.storyboard */,
+				119E80C52357298A002182A5 /* Info.plist */,
+			);
+			path = DemoProjectiOS;
+			sourceTree = "<group>";
+		};
 		11DCC6EB219EABBF00A0CDD7 = {
 			isa = PBXGroup;
 			children = (
 				11DCC6F7219EABBF00A0CDD7 /* GoogleMobileVision.Xamarin */,
 				11DCC702219EABBF00A0CDD7 /* GoogleMobileVision.XamarinTests */,
+				119E80B623572987002182A5 /* DemoProjectiOS */,
 				11DCC6F6219EABBF00A0CDD7 /* Products */,
 				36F0F01A37F15E39F7C9E479 /* Pods */,
 				5BDB80096ACA63069282CEC4 /* Frameworks */,
@@ -80,6 +145,7 @@
 			children = (
 				11DCC6F5219EABBF00A0CDD7 /* GoogleMobileVision_Xamarin.framework */,
 				11DCC6FE219EABBF00A0CDD7 /* GoogleMobileVision.XamarinTests.xctest */,
+				119E80B523572987002182A5 /* DemoProjectiOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -111,6 +177,8 @@
 				3FF61531FDEAEC2C2E85DAAB /* Pods-GoogleMobileVision.Xamarin.release.xcconfig */,
 				D05CF607307C3E1E49276239 /* Pods-GoogleMobileVision.XamarinTests.debug.xcconfig */,
 				0ABFC788233743AA0DD8947C /* Pods-GoogleMobileVision.XamarinTests.release.xcconfig */,
+				74B8FFC9C550D99775328601 /* Pods-DemoProjectiOS.debug.xcconfig */,
+				3822D09F387E41A952B99AAD /* Pods-DemoProjectiOS.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -120,6 +188,7 @@
 			children = (
 				484D4212E2AF6715E3AC9EF4 /* Pods_GoogleMobileVision_Xamarin.framework */,
 				0FAF37B8C300594302C236E9 /* Pods_GoogleMobileVision_XamarinTests.framework */,
+				5D03A5DBCCFA2989417E5B59 /* Pods_DemoProjectiOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -139,6 +208,28 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		119E80B423572987002182A5 /* DemoProjectiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 119E80C82357298A002182A5 /* Build configuration list for PBXNativeTarget "DemoProjectiOS" */;
+			buildPhases = (
+				6914BC272E151D4554C3A9DA /* [CP] Check Pods Manifest.lock */,
+				119E80B123572987002182A5 /* Sources */,
+				119E80B223572987002182A5 /* Frameworks */,
+				119E80B323572987002182A5 /* Resources */,
+				119E80CD23572991002182A5 /* Embed Frameworks */,
+				1B4DEB28C59DA6C3837C61C5 /* [CP] Embed Pods Frameworks */,
+				A370D3DABF08FC42B5BC399B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				119E80CC23572991002182A5 /* PBXTargetDependency */,
+			);
+			name = DemoProjectiOS;
+			productName = DemoProjectiOS;
+			productReference = 119E80B523572987002182A5 /* DemoProjectiOS.app */;
+			productType = "com.apple.product-type.application";
+		};
 		11DCC6F4219EABBF00A0CDD7 /* GoogleMobileVision.Xamarin */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11DCC709219EABBF00A0CDD7 /* Build configuration list for PBXNativeTarget "GoogleMobileVision.Xamarin" */;
@@ -167,8 +258,6 @@
 				11DCC6FA219EABBF00A0CDD7 /* Sources */,
 				11DCC6FB219EABBF00A0CDD7 /* Frameworks */,
 				11DCC6FC219EABBF00A0CDD7 /* Resources */,
-				92A7F6607C2BC81CD6D56917 /* [CP] Embed Pods Frameworks */,
-				217EAEF2554C8B2BC8790594 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -186,9 +275,13 @@
 		11DCC6EC219EABBF00A0CDD7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1110;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Forefront Consulting AB";
 				TargetAttributes = {
+					119E80B423572987002182A5 = {
+						CreatedOnToolsVersion = 11.1;
+					};
 					11DCC6F4219EABBF00A0CDD7 = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -203,6 +296,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 11DCC6EB219EABBF00A0CDD7;
 			productRefGroup = 11DCC6F6219EABBF00A0CDD7 /* Products */;
@@ -211,11 +305,22 @@
 			targets = (
 				11DCC6F4219EABBF00A0CDD7 /* GoogleMobileVision.Xamarin */,
 				11DCC6FD219EABBF00A0CDD7 /* GoogleMobileVision.XamarinTests */,
+				119E80B423572987002182A5 /* DemoProjectiOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		119E80B323572987002182A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				119E80C42357298A002182A5 /* LaunchScreen.storyboard in Resources */,
+				119E80C12357298A002182A5 /* Assets.xcassets in Resources */,
+				119E80BF23572987002182A5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		11DCC6F3219EABBF00A0CDD7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -239,22 +344,32 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-GoogleMobileVision.Xamarin/Pods-GoogleMobileVision.Xamarin-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/GoogleMobileVision/GoogleMVFaceDetectorResources.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/GoogleMobileVision/GoogleMVTextDetectorResources.bundle",
+				"${PODS_ROOT}/Target Support Files/Pods-GoogleMobileVision.Xamarin/Pods-GoogleMobileVision.Xamarin-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMVFaceDetectorResources.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMVTextDetectorResources.bundle",
+				"${PODS_ROOT}/Target Support Files/Pods-GoogleMobileVision.Xamarin/Pods-GoogleMobileVision.Xamarin-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoogleMobileVision.Xamarin/Pods-GoogleMobileVision.Xamarin-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoogleMobileVision.Xamarin/Pods-GoogleMobileVision.Xamarin-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1B4DEB28C59DA6C3837C61C5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DemoProjectiOS/Pods-DemoProjectiOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DemoProjectiOS/Pods-DemoProjectiOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DemoProjectiOS/Pods-DemoProjectiOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		208FA0DDFBDEBD1DF4F73C8E /* [CP] Check Pods Manifest.lock */ = {
@@ -279,30 +394,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		217EAEF2554C8B2BC8790594 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-GoogleMobileVision.XamarinTests/Pods-GoogleMobileVision.XamarinTests-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/GoogleMobileVision/GoogleMVFaceDetectorResources.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/GoogleMobileVision/GoogleMVTextDetectorResources.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMVFaceDetectorResources.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMVTextDetectorResources.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoogleMobileVision.XamarinTests/Pods-GoogleMobileVision.XamarinTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		5EF3E6F25C2DBCFFBFE42157 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -325,7 +416,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		92A7F6607C2BC81CD6D56917 /* [CP] Embed Pods Frameworks */ = {
+		6914BC272E151D4554C3A9DA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -333,27 +424,50 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-GoogleMobileVision.XamarinTests/Pods-GoogleMobileVision.XamarinTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
-				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Check Pods Manifest.lock";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"$(DERIVED_FILE_DIR)/Pods-DemoProjectiOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoogleMobileVision.XamarinTests/Pods-GoogleMobileVision.XamarinTests-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A370D3DABF08FC42B5BC399B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DemoProjectiOS/Pods-DemoProjectiOS-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DemoProjectiOS/Pods-DemoProjectiOS-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DemoProjectiOS/Pods-DemoProjectiOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		119E80B123572987002182A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				119E80BC23572987002182A5 /* ViewController.swift in Sources */,
+				119E80B823572987002182A5 /* AppDelegate.swift in Sources */,
+				119E80BA23572987002182A5 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		11DCC6F1219EABBF00A0CDD7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -373,6 +487,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		119E80CC23572991002182A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11DCC6F4219EABBF00A0CDD7 /* GoogleMobileVision.Xamarin */;
+			targetProxy = 119E80CB23572991002182A5 /* PBXContainerItemProxy */;
+		};
 		11DCC701219EABBF00A0CDD7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 11DCC6F4219EABBF00A0CDD7 /* GoogleMobileVision.Xamarin */;
@@ -380,7 +499,70 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		119E80BD23572987002182A5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				119E80BE23572987002182A5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		119E80C22357298A002182A5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				119E80C32357298A002182A5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		119E80C62357298A002182A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74B8FFC9C550D99775328601 /* Pods-DemoProjectiOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8WDHWQ3DB9;
+				INFOPLIST_FILE = DemoProjectiOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = se.ffcg.DemoProjectiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		119E80C72357298A002182A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3822D09F387E41A952B99AAD /* Pods-DemoProjectiOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8WDHWQ3DB9;
+				INFOPLIST_FILE = DemoProjectiOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = se.ffcg.DemoProjectiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		11DCC707219EABBF00A0CDD7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -527,6 +709,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "se.ffcg.GoogleMobileVision-Xamarin";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -555,6 +738,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "se.ffcg.GoogleMobileVision-Xamarin";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -598,6 +782,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		119E80C82357298A002182A5 /* Build configuration list for PBXNativeTarget "DemoProjectiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				119E80C62357298A002182A5 /* Debug */,
+				119E80C72357298A002182A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		11DCC6EF219EABBF00A0CDD7 /* Build configuration list for PBXProject "GoogleMobileVision.Xamarin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

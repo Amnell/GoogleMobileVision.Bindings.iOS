@@ -13,7 +13,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface GoogleMobileVisionWrapper : NSObject
 
+@property(nonatomic) BOOL debug;
+
 - (NSString *)detectTextInImage:(UIImage *)image;
+
+- (NSArray<NSString *> *)detectTextLinesInImage:(UIImage *)image;
 
 @end
 
