@@ -63,7 +63,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         let ciimage : CIImage = CIImage(cvPixelBuffer: imageBuffer)
         guard let image: UIImage = self.convert(cmage: ciimage) else { return }
 
-        print(wrapper.textRows(in: image))
+        print(wrapper.detectTextLines(in: image))
     }
 
     // Convert CIImage to CGImage
