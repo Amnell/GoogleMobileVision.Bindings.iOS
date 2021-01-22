@@ -30,10 +30,11 @@ PODS:
   - Protobuf (3.6.1)
 
 DEPENDENCIES:
+  - GoogleMobileVision
   - GoogleMobileVision (~> 1.5.0)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - GoogleMobileVision
     - GoogleToolboxForMac
     - GTMSessionFetcher
@@ -45,6 +46,6 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: 0c4baf0a73acd0041bf9f71ea018deedab5ea84e
   Protobuf: 1eb9700044745f00181c136ef21b8ff3ad5a0fd5
 
-PODFILE CHECKSUM: ff8ccf7c2e227c20cce1fdc5142b052b4316b2a1
+PODFILE CHECKSUM: 8bfd1c2752477c3d872033f7ea6df15d6af6289a
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.8.3

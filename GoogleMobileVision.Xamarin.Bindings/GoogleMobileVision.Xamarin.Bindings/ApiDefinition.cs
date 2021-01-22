@@ -4,6 +4,7 @@ using UIKit;
 using Foundation;
 using ObjCRuntime;
 using CoreGraphics;
+using System.Collections.Generic;
 
 namespace GoogleMobileVision.Xamarin.Bindings
 {
@@ -68,5 +69,8 @@ namespace GoogleMobileVision.Xamarin.Bindings
     {
         [Export("detectTextInImage:")]
         string DetectTextInImage(UIImage image);
-    }
+
+		[Export("detectTextLinesInImage:")]
+        NSString[] DetectTextLinesInImage(UIImage image);
+	}
 }

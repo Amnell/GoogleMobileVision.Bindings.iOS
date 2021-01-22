@@ -17,6 +17,7 @@
     self = [super init];
     if (self != nil) {
         textDetector = [GMVDetector detectorOfType:GMVDetectorTypeText options:nil];
+        self.debug = false;
     }
     return self;
 }
@@ -31,22 +32,46 @@
 
     NSArray<GMVFeature *> *features = [textDetector featuresInImage:image options:options];
 
-    NSLog(@"Detected %lu textes.", (unsigned long)features.count);
+    if (self.debug) {
+        NSLog(@"Detected %lu textes.", (unsigned long)features.count);
+    }
 
     NSString *result = @"";
 
     for (GMVTextBlockFeature *textBlock in features) {
-        NSLog(@"lang: %@ value: %@", textBlock.language, textBlock.value);
-
         // For each text block, iterate over each line.
         for (GMVTextLineFeature *textLine in textBlock.lines) {
-            NSLog(@"lang: %@ value: %@", textLine.language, textLine.value);
-
             // For each line, iterate over each word.
             for (GMVTextElementFeature *textElement in textLine.elements) {
-                NSLog(@"value: %@", textElement.value);
+                if (self.debug) {
+                    NSLog(@"value: %@", textElement.value);
+                }
                 result = [result stringByAppendingString: textElement.value];
             }
+        }
+    }
+
+    return result;
+}
+
+- (NSArray<NSString *> *)detectTextLinesInImage:(UIImage *)image {
+    UIDeviceOrientation deviceOrientation = [[UIDevice currentDevice] orientation];
+    GMVImageOrientation orientation = [GMVUtility
+                                       imageOrientationFromOrientation:deviceOrientation
+                                       withCaptureDevicePosition:AVCaptureDevicePositionBack
+                                       defaultDeviceOrientation: UIDeviceOrientationPortrait];
+    NSDictionary *options = @{ GMVDetectorImageOrientation : @(orientation) };
+
+    NSArray<GMVFeature *> *features = [textDetector featuresInImage:image options:options];
+
+    NSMutableArray *result = NSMutableArray.new;
+
+    for (GMVTextBlockFeature *textBlock in features) {
+        for (GMVTextLineFeature *textLine in textBlock.lines) {
+            if (self.debug) {
+                NSLog(@"GMVTextLineFeature: %@", textLine.value);
+            }
+            [result addObject:textLine.value];
         }
     }
 
